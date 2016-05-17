@@ -22,7 +22,7 @@ header {
 div.wrapper {
   font-family: Calibri;
   margin: auto;
-  width: 75%;
+  width: 60%;
   text-align: center;
   font-size: 24px;
   border-radius: 30px;
@@ -64,18 +64,20 @@ div.content {
 
 }
 
-div.content p{
+div.box1 p{
   font-family: Calibri;
-  font-size: 16px;
+  font-size: 28px;
   margin: 30px;
-  text-align: left;
+  text-align: center;
 }
+
 div.last {
   width: 100%;
   float:left;
 
 }
 div.last p{
+  font-style: normal;
   font-family: Calibri;
   font-size: 16px;
   margin: 30px;
@@ -110,6 +112,15 @@ div.foot p {
   color: #ffffff;
   text-align: center;
 }
+
+a:link, a:visited {
+    color: white;
+    padding: 0px 50px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
 </style>
 
 
@@ -121,41 +132,36 @@ div.foot p {
 
 <div class="wrapper">
   <div class="top">
-     <p> Welcome to out webpage for squad | code</p>
+    <p><a href="http://annieleonia.github.io/project1">About</a>
+    <t><a href="http://annieleonia.github.io/project2">Description</a></p>
   </div>
+
   <div class="panel">
+    <div class="box1">
 
-  <div class="box1">
-  <div class="picture">
-    <p><font size=5><b>START BY LOGGING IN!</b></font>
-    <p><img src="https://cdn1.cdnme.se/894481/9-3/project4_573abdd6ddf2b305c6342fd2.jpg" alt="picture" style="width:50%"></p>
-  </div>
-  </div>
-
-      <div class="box2">
       <div class="picture">
-        <p><font size=5><b>YOUR SQUAD CAN CHAT!</b></font>
-        <p><img src="https://cdn3.cdnme.se/894481/9-3/project3_5739c975ddf2b305c767bfa3.jpg" alt="picture" style="width:100%"></p>
-      </div>
-      </div>
+        <br><b>START BY LOGGING IN!</b>
+        <p><img src="https://cdn2.cdnme.se/894481/9-3/project6_573ac9cdddf2b305bac8b961.jpg" alt="picture" style="width:100%"></p>
+        </div>
 
-      <div class="box1">
         <div class="picture">
-          <p><font size=5><b>YOUR SQUAD CAN SHARE CODE!</b></font>
+         <b>YOUR SQUAD CAN CHAT!</b>
+         <p><img src="https://cdn3.cdnme.se/894481/9-3/project3_5739c975ddf2b305c767bfa3.jpg" alt="picture" style="width:100%"></p>
+        </div>
+
+        <div class="picture">
+          <b>YOUR SQUAD CAN SHARE CODE!</b>
           <p><img src="https://cdn3.cdnme.se/894481/9-3/project2_573993582a6b224b17c82c88.jpg" alt="picture" style="width:100%"></p>
         </div>
       </div>
-
       <div class="box2">
         <div class="last">
-            <p><font size=5><b>DESIGN AND TECHNICAL DESCRIPTION</b></font>
-              <br>We are using two simple graphical user interfaces. The first one is the user interface for the login process. It is obvious for the user which fields one should fill in and what button to press to continue to the project. The second one is the interface for the main functions and code editing. It contains a list with classes and a chat area at the sides and then a main editing area in the middle. The interface contains large buttons that clearly shows their functionality.
+            <br><b>DESIGN AND TECHNICAL DESCRIPTION</b>
+              <p>We are using two simple graphical user interfaces. The first one is the user interface for the login process. It is obvious for the user which fields one should fill in and what button to press to continue to the project. The second one is the interface for the main functions and code editing. It contains a list with classes and a chat area at the sides and then a main editing area in the middle. The interface contains large buttons that clearly shows their functionality.
               <br><br>The Server generates a thread that listens for communication when a Client is connected. The communication is based on TCP connection. And Clients are connected to the Server to communicate with each other. Each time when a Client perform an action in the program, a Doc that includes a type will be sent over to the Server. The Server then sends out the Doc to all threads depending on its type, and there is a listener on the Clients’ side that receives and analyzes commands to generate different actions.
             </p>
         </div>
-
       </div>
-
   </div>
 
   <div class="foot">
